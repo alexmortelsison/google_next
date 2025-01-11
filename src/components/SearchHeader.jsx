@@ -3,14 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Searchbox from "./Searchbox";
-import { TbGridDots, TbGridGoldenratio } from "react-icons/tb";
+import { TbGridDots } from "react-icons/tb";
+import SeachHeaderOptions from "./SeachHeaderOptions";
 
 export default function SearchHeader() {
   return (
     <header className={`sticky top-0`}>
       <div className="flex w-full p-6 items-center justify-between">
         <Link href={"/"}>
-          <Image src={"/logo.png"} width={120} height={40} priority />
+          <Image
+            src={"/logo.png"}
+            width={120}
+            height={40}
+            priority
+            alt="photo"
+          />
         </Link>
         <div className="flex-1">
           <Searchbox />
@@ -26,6 +33,7 @@ export default function SearchHeader() {
           Sign in
         </button>
       </div>
+      <SeachHeaderOptions />
     </header>
   );
 }
