@@ -8,7 +8,7 @@ import SeachHeaderOptions from "./SeachHeaderOptions";
 
 export default function SearchHeader() {
   return (
-    <header className={`sticky top-0 bg-white`}>
+    <header className={`sticky top-0 bg-[#0a0a0a]`}>
       <div className="flex w-full p-6 items-center justify-between">
         <Link href={"/"}>
           <Image
