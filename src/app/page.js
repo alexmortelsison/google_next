@@ -13,6 +13,7 @@ export default function Home() {
           width={700}
           height={100}
           priority
+          alt="photo"
         />
         <HomeSearch />
       </div>
